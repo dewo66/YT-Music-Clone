@@ -1,0 +1,19 @@
+id
+image
+sound
+video
+sanatçı ismi
+şarkı türü
+şarkı süresi
+görüntülenme sayısı
+beğeni sayısı
+
+
+
+filtrelemek için önce 
+neyi filtreleyeceğimizi dinamik bir yapıda almamız gerek
+
+funck filtrele (  ){
+
+}
+
