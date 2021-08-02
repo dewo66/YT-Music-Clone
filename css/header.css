@@ -54,6 +54,7 @@ header {
   height: 26px;
   border-radius: 50%;
   overflow: hidden;
+  margin-left: 80px;
 }
 
 .searchContainer {
@@ -69,6 +70,73 @@ header {
 .smallIcon {
   display: none;
 }
+
+.searchPart{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#searchInput {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  
+  border: 1px #333333 solid;
+  border-radius: 2px;
+  
+  background-color:#212121; ;
+}
+
+.searchHeader {
+  padding: 15px;
+  width: 804px;
+  font-weight: 700;
+  color: white;
+  background-color: #212121;
+}
+::placeholder {
+  color: #909090;
+  font-size: 20px;
+  font-weight: 700;
+}
+.button {
+  padding:0px 10px;
+  height: 24px;
+  width: 24px;
+  filter: invert(66%) sepia(11%) saturate(17%) hue-rotate(11deg) brightness(85%) contrast(83%);
+
+
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 880px;
+}
+
+.suggestions  li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  width: 880px;
+  position: absolute;
+  margin-top: 100px;
+  z-index: 11;
+
+}
+
+.suggestions li div:nth-child(2) {
+  width: 750px;
+  height: 50px;
+  float: left;
+}
+
 
 @media screen and (max-width: 1150px) {
   .arayin {

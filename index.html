@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS KISMI-->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="icon" href="https://music.youtube.com/favicon.ico">
     <title>YouTube Music Clone</title>
+
+    <!-- JS Kısmı -->
+
 </head>
 
 <body>
@@ -25,7 +30,20 @@
                 <div class="yukselt">Yükselt</div>
                 <div class="searchContainer">
                     <i class="fas fa-search" style="margin-right: 0.5  vw;"></i>
-                    <div class="arayin" href="#arayin">Arayin</div>
+                    <div class="arayin" onclick="searchHeader()" href="#arayin">Arayin</div>
+                </div>
+            </div>
+
+            <div class="searchPart">
+                <div id="searchInput">
+                    <img onclick="searchOut()" class="button" src="./image/svg/left-arrow.svg">
+                    <input class="searchHeader" placeholder="Arayın">
+                </div>
+                <ul class="suggestions">
+                    
+                </ul>
+                <div>
+
                 </div>
             </div>
             <img class="smallIcon" src="./image/YT-Music-Icon-small.svg">
@@ -46,9 +64,10 @@
 
     </header>
 
+
 </body>
 <script>
-    var musicData = ""
 </script>
+<script src="./js/search.js"></script>
 
 </html>
